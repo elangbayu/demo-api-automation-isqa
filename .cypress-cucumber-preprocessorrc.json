@@ -5,6 +5,7 @@
         "cypress/support/step_definitions/**/*.{js,ts}"
     ],
     "json": {
-      "enabled": true
+      "enabled": true,
+      "formatter": "./cucumber-json-formatter"
     }
 }
