@@ -130,8 +130,3 @@ When("user goes to logs endpoint with filter limit {string}", (limit) => {
     failOnStatusCode: true,
   });
 });
-
-Then(
-  "user got their all filtered {string} exercises logs in details",
-  (query_param) => {}
-);
