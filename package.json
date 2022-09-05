@@ -1,0 +1,19 @@
+{
+  "name": "isqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "@faker-js/faker": "^7.5.0",
+    "ajv": "^8.11.0",
+    "cypress": "^10.7.0"
+  }
+}
