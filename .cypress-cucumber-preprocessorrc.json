@@ -6,6 +6,7 @@
     ],
     "json": {
       "enabled": true,
-      "formatter": "./cucumber-json-formatter"
+      "formatter": "./cucumber-json-formatter",
+      "output": "cypress/reports/test-report.json"
     }
 }
