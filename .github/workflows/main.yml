@@ -10,9 +10,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Download cucumber json formatter
         run: apt update && apt install -y curl && curl -L https://github.com/cucumber/json-formatter/releases/download/v19.0.0/cucumber-json-formatter-linux-amd64 > cucumber-json-formatter && chmod +x cucumber-json-formatter
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-artifacts
+          path: cypress
