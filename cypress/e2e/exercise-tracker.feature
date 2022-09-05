@@ -15,17 +15,17 @@ Feature: Exercise Tracker
         When user goes to logs endpoint
         Then user got their all exercises logs in details
 
-    @Positive @Logs @FromLogs
-    Scenario: User see filtered exercises logs from specific date
-        When user goes to logs endpoint with filter "from"
-        Then user got their all filtered "from" exercises logs in details
+    # @Positive @Logs @FromLogs
+    # Scenario: User see filtered exercises logs from specific date
+    #     When user goes to logs endpoint with filter "from"
+    #     Then user got their all filtered "from" exercises logs in details
 
-    @Positive @Logs @ToLogs
-    Scenario: User see filtered exercises logs to specific date
-        When user goes to logs endpoint with filter "to"
-        Then user got their all filtered "to" exercises logs in details
+    # @Positive @Logs @ToLogs
+    # Scenario: User see filtered exercises logs to specific date
+    #     When user goes to logs endpoint with filter "to"
+    #     Then user got their all filtered "to" exercises logs in details
 
     @Positive @Logs @LimitLogs
     Scenario: User see filtered exercises logs with limited count data
-        When user goes to logs endpoint with filter "limit"
-        Then user got their all filtered "limit" exercises logs in details
+        When user goes to logs endpoint with filter limit "2"
+        Then user got their all exercises logs in details
