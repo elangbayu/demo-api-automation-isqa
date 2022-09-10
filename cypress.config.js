@@ -14,6 +14,8 @@ module.exports = defineConfig({
       return config;
     },
     baseUrl: "https://exercise-tracker.freecodecamp.rocks",
-    specPattern: "cypress/e2e/**/*.feature"
+    specPattern: "cypress/e2e/**/*.feature",
+    video: false,
+    screenshotOnRunFailure: false
   },
 });
